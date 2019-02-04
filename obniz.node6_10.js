@@ -11929,7 +11929,7 @@ module.exports = JsonBinaryConverter;
 /*! exports provided: name, version, description, main, scripts, lint-staged, keywords, repository, author, homepage, license, devDependencies, dependencies, bugs, private, browser, default */
 /***/ (function(module) {
 
-module.exports = {"name":"obniz","version":"1.16.1","description":"obniz sdk for javascript","main":"index.js","scripts":{"test":"nyc --reporter=text --reporter=html mocha $NODE_DEBUG_OPTION  ./test/index.js","buildAndtest":"npm run build && npm test","realtest":"mocha $NODE_DEBUG_OPTION -b ./realtest/index.js","local":"gulp --gulpfile ./_tools/server.js --cwd .","build":"npm run lint && gulp $NODE_DEBUG_OPTION --gulpfile ./_tools/server.js --cwd . build","version":"npm run build && git add obniz.js && git add obniz.min.js && git add obniz.node6_10.js","lint":"eslint --fix . --rulesdir eslint/rule","precommit":"lint-staged"},"lint-staged":{"*.js":["eslint --rulesdir eslint/rule --fix ","git add"]},"keywords":["obniz"],"repository":"obniz/obniz","author":"yukisato <yuki@yuki-sato.com>","homepage":"https://obniz.io/","license":"SEE LICENSE IN LICENSE.txt","devDependencies":{"babel-cli":"^6.26.0","babel-core":"^6.26.3","babel-loader":"^7.1.5","babel-polyfill":"^6.26.0","babel-preset-env":"^1.7.0","babel-preset-es2015":"^6.24.1","babel-preset-stage-3":"^6.24.1","chai":"^4.2.0","chai-like":"^1.1.1","child_process":"^1.0.2","chokidar":"^2.0.4","concat-with-sourcemaps":"^1.1.0","ejs":"^2.6.1","eslint":"^5.7.0","eslint-config-prettier":"^3.1.0","eslint-plugin-jasmine":"^2.10.1","eslint-plugin-prettier":"^2.7.0","express":"^4.16.4","get-port":"^4.0.0","glob":"^7.1.3","gulp":"^3.9.1","gulp-babel":"^8.0.0","gulp-concat":"^2.6.1","gulp-ejs":"^3.2.0","gulp-filter":"^5.1.0","gulp-notify":"^3.2.0","gulp-plumber":"^1.2.0","gulp-sort":"^2.0.0","gulp-util":"^3.0.8","gulp-yaml":"^2.0.2","husky":"^0.14.3","json-loader":"^0.5.7","lint-staged":"^7.3.0","mocha":"^5.2.0","mocha-chrome":"^1.1.0","mocha-directory":"^2.3.0","mocha-sinon":"^2.1.0","natives":"^1.1.6","ncp":"^2.0.0","node-notifier":"^5.3.0","nyc":"^12.0.2","path":"^0.12.7","prettier":"^1.14.3","sinon":"^6.3.5","svg-to-png":"^3.1.2","through2":"^2.0.3","uglifyjs-webpack-plugin":"^1.3.0","vinyl":"^2.2.0","webpack":"^4.20.2","webpack-cli":"^3.1.2","webpack-node-externals":"^1.7.2","webpack-stream":"^5.1.1","yaml-loader":"^0.5.0"},"dependencies":{"eventemitter3":"^3.1.0","js-yaml":"^3.12.0","node-dir":"^0.1.17","node-fetch":"^2.2.0","semver":"^5.6.0","tv4":"^1.3.0","ws":"^6.1.0"},"bugs":{"url":"https://github.com/obniz/obniz/issues"},"private":false,"browser":{"ws":"./obniz/libs/webpackReplace/ws.js","canvas":"./obniz/libs/webpackReplace/canvas.js","./obniz/libs/webpackReplace/require-context.js":"./obniz/libs/webpackReplace/require-context-browser.js"}};
+module.exports = {"name":"obniz","version":"1.16.1","description":"obniz sdk for javascript","main":"index.js","scripts":{"test":"nyc --reporter=text --reporter=html mocha $NODE_DEBUG_OPTION  ./test/index.js","buildAndtest":"npm run build && npm test","realtest":"mocha $NODE_DEBUG_OPTION -b ./realtest/index.js","local":"gulp --gulpfile ./_tools/server.js --cwd .","build":"npm run lint && gulp $NODE_DEBUG_OPTION --gulpfile ./_tools/server.js --cwd . build","version":"npm run build && git add obniz.js && git add obniz.min.js && git add obniz.node6_10.js","lint":"eslint --fix . --rulesdir eslint/rule"},"lint-staged":{"*.js":["eslint --rulesdir eslint/rule --fix ","git add"]},"keywords":["obniz"],"repository":"obniz/obniz","author":"yukisato <yuki@yuki-sato.com>","homepage":"https://obniz.io/","license":"SEE LICENSE IN LICENSE.txt","devDependencies":{"babel-cli":"^6.26.0","babel-core":"^6.26.3","babel-loader":"^7.1.5","babel-polyfill":"^6.26.0","babel-preset-env":"^1.7.0","babel-preset-es2015":"^6.24.1","babel-preset-stage-3":"^6.24.1","chai":"^4.2.0","chai-like":"^1.1.1","child_process":"^1.0.2","chokidar":"^2.0.4","concat-with-sourcemaps":"^1.1.0","ejs":"^2.6.1","eslint":"^5.13.0","eslint-config-prettier":"^3.6.0","eslint-plugin-jasmine":"^2.10.1","eslint-plugin-prettier":"^2.7.0","express":"^4.16.4","get-port":"^4.1.0","glob":"^7.1.3","gulp":"^3.9.1","gulp-babel":"^8.0.0","gulp-concat":"^2.6.1","gulp-ejs":"^3.3.0","gulp-filter":"^5.1.0","gulp-notify":"^3.2.0","gulp-plumber":"^1.2.1","gulp-sort":"^2.0.0","gulp-util":"^3.0.8","gulp-yaml":"^2.0.3","husky":"^0.14.3","json-loader":"^0.5.7","lint-staged":"^7.3.0","mocha":"^5.2.0","mocha-chrome":"^1.1.0","mocha-directory":"^2.3.0","mocha-sinon":"^2.1.0","natives":"^1.1.6","ncp":"^2.0.0","node-notifier":"^5.4.0","nyc":"^12.0.2","path":"^0.12.7","prettier":"^1.16.4","sinon":"^6.3.5","svg-to-png":"^3.1.2","through2":"^2.0.5","uglifyjs-webpack-plugin":"^1.3.0","vinyl":"^2.2.0","webpack":"^4.29.0","webpack-cli":"^3.2.1","webpack-node-externals":"^1.7.2","webpack-stream":"^5.2.1","yaml-loader":"^0.5.0"},"dependencies":{"eventemitter3":"^3.1.0","js-yaml":"^3.12.1","node-dir":"^0.1.17","node-fetch":"^2.3.0","semver":"^5.6.0","tv4":"^1.3.0","ws":"^6.1.3"},"bugs":{"url":"https://github.com/obniz/obniz/issues"},"private":false,"browser":{"ws":"./obniz/libs/webpackReplace/ws.js","canvas":"./obniz/libs/webpackReplace/canvas.js","./obniz/libs/webpackReplace/require-context.js":"./obniz/libs/webpackReplace/require-context-browser.js"}};
 
 /***/ }),
 
@@ -11955,6 +11955,7 @@ var map = {
 	"./Display/MatrixLED_MAX7219/index.js": "./parts/Display/MatrixLED_MAX7219/index.js",
 	"./Display/SainSmartTFT18LCD/index.js": "./parts/Display/SainSmartTFT18LCD/index.js",
 	"./Display/SharpMemoryTFT/index.js": "./parts/Display/SharpMemoryTFT/index.js",
+	"./Display/WaveshareEInk_Tricolor/index.js": "./parts/Display/WaveshareEInk_Tricolor/index.js",
 	"./DistanceSensor/GP2Y0A21YK0F/index.js": "./parts/DistanceSensor/GP2Y0A21YK0F/index.js",
 	"./DistanceSensor/HC-SR04/index.js": "./parts/DistanceSensor/HC-SR04/index.js",
 	"./GPS/GYSFDMAXB/index.js": "./parts/GPS/GYSFDMAXB/index.js",
@@ -14815,6 +14816,374 @@ class SharpMemoryTFT {
 
 if (true) {
   module.exports = SharpMemoryTFT;
+}
+
+/***/ }),
+
+/***/ "./parts/Display/WaveshareEInk_Tricolor/index.js":
+/*!*******************************************************!*\
+  !*** ./parts/Display/WaveshareEInk_Tricolor/index.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+class WaveshareEInk_Tricolor {
+  constructor() {
+    this.keys = ['vcc', 'gnd', 'busy', 'rst', 'dc', 'cs', 'clk', 'din', 'width', 'height'];
+
+    this.requiredKeys = ['busy', 'rst', 'dc', 'cs', 'width', 'height'];
+
+    this.commands = {};
+    this.commands.PanelSetting = 0x00;
+    this.commands.PowerOff = 0x02;
+    this.commands.PowerOn = 0x04;
+    this.commands.BoosterSoftStart = 0x06;
+    this.commands.DeepSleep = 0x07;
+    this.commands.DataStartTransmission1 = 0x10;
+    this.commands.DisplayRefresh = 0x12;
+    this.commands.DataStartTransmission2 = 0x13;
+    this.commands.VcomAndIntervalSetting = 0x50;
+    this.commands.ResolutionSetting = 0x61;
+
+    this._canvas = null;
+    this._reset();
+  }
+
+  static info() {
+    return {
+      name: 'WaveshareEInk_Tricolor'
+    };
+  }
+
+  wired(obniz) {
+    this.obniz = obniz;
+
+    this.io_busy = obniz.getIO(this.params.busy);
+    this.io_rst = obniz.getIO(this.params.rst);
+    this.io_dc = obniz.getIO(this.params.dc);
+    this.io_cs = obniz.getIO(this.params.cs);
+
+    obniz.setVccGnd(this.params.vcc, this.params.gnd, '5v'); // module has a 5v to 3v3 regulator
+
+    this.params.mode = 'master';
+    this.params.frequency = parseInt(1000 * 1000);
+    this.params.mosi = this.params.din;
+    this.params.drive = '3v';
+    this.spi = this.obniz.getSpiWithConfig(this.params);
+
+    this.width = this.params.width;
+    this.height = this.params.height;
+
+    this.obniz.wait(100);
+  }
+
+  reset() {
+    this.io_rst.output(false);
+    this.obniz.wait(10);
+    this.io_rst.output(true);
+    this.obniz.wait(10);
+  }
+
+  sendCommand(cmd) {
+    this.io_cs.output(false);
+    this.io_dc.output(false);
+    this.spi.write([cmd]);
+    this.io_cs.output(true);
+  }
+
+  sendData(data) {
+    this.io_cs.output(false);
+    this.io_dc.output(true);
+    this.spi.write([data]);
+    this.io_cs.output(true);
+  }
+
+  poweronWait() {
+    var _this = this;
+
+    return _asyncToGenerator(function* () {
+      _this.reset();
+      _this.sendCommand(_this.commands.BoosterSoftStart);
+      _this.sendData(0x17);
+      _this.sendData(0x17);
+      _this.sendData(0x17);
+
+      _this.sendCommand(_this.commands.PowerOn);
+
+      // check busy pin
+      while ((yield _this.io_busy.inputWait()) == 0) {
+        _this.obniz.wait(10);
+      }
+
+      _this.sendCommand(_this.commands.PanelSetting);
+      _this.sendData(0x0F);
+
+      _this.sendCommand(_this.commands.ResolutionSetting);
+      _this.sendData(0x98);
+      _this.sendData(0x00);
+      _this.sendData(0x98);
+
+      _this.sendCommand(_this.commands.VcomAndIntervalSetting);
+      _this.sendData(0x77);
+    })();
+  }
+
+  poweroff() {
+    this.sendCommand(this.commands.VcomAndIntervalSetting);
+    this.sendData(0x87);
+    this.sendCommand(this.commands.PowerOff);
+  }
+
+  deepsleep() {
+    this.sendCommand(this.commands.DeepSleep);
+    this.sendData(0xA5);
+  }
+
+  raw(rawBW, rawY) {
+    var _this2 = this;
+
+    return _asyncToGenerator(function* () {
+      let totalbytes = _this2.width * _this2.height / 8;
+      yield _this2.poweronWait();
+
+      _this2.sendCommand(_this2.commands.DataStartTransmission1);
+      for (let i = 0; i < totalbytes; i++) {
+        _this2.sendData(rawBW[i]);
+      }
+
+      _this2.sendCommand(_this2.commands.DataStartTransmission2);
+      for (let i = 0; i < totalbytes; i++) {
+        _this2.sendData(rawY[i]);
+      }
+
+      _this2.sendCommand(_this2.commands.DisplayRefresh);
+
+      // check busy
+      while ((yield _this2.io_busy.inputWait()) == 0) {
+        _this2.obniz.wait(10);
+      }
+
+      _this2.poweroff();
+      _this2.deepsleep();
+    })();
+  }
+
+  // copy from display.js
+
+  _reset() {
+    this._pos = { x: 0, y: 0 };
+    this.autoFlush = true;
+  }
+
+  warnCanvasAvailability() {
+    if (this.obniz.isNode) {
+      throw new Error('E-Paper require node-canvas to draw rich contents. see more detail on docs');
+    } else {
+      throw new Error('E-Paper cant create canvas element to body');
+    }
+  }
+
+  _preparedCanvas() {
+    if (this._canvas) {
+      return this._canvas;
+    }
+    if (this.obniz.isNode) {
+      try {
+        const { createCanvas } = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module 'canvas'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+        this._canvas = createCanvas(this.width, this.height);
+      } catch (e) {
+        // this.warnCanvasAvailability();
+        return null;
+      }
+    } else {
+      const identifier = 'ePaperCanvas-' + this.obniz.id;
+      let canvas = document.getElementById(identifier);
+      if (!canvas) {
+        canvas = document.createElement('canvas');
+        canvas.setAttribute('id', identifier);
+        canvas.style.visibility = 'hidden';
+        canvas.width = this.width;
+        canvas.height = this.height;
+        canvas.style['-webkit-font-smoothing'] = 'none';
+        let body = document.getElementsByTagName('body')[0];
+        body.appendChild(canvas);
+      }
+      this._canvas = canvas;
+    }
+    const ctx = this._canvas.getContext('2d');
+    ctx.fillStyle = '#FFF';
+    ctx.fillRect(0, 0, this.width, this.height);
+    ctx.fillStyle = '#000';
+    ctx.strokeStyle = '#000';
+    this._pos.x = 0;
+    this._pos.y = 0;
+    this.fontSize = 16;
+    ctx.font = `${this.fontSize}px Arial`;
+    return this._canvas;
+  }
+
+  _ctx() {
+    const canvas = this._preparedCanvas();
+    if (canvas) {
+      return canvas.getContext('2d');
+    }
+  }
+
+  font(font, size) {
+    const ctx = this._ctx();
+    if (typeof size !== 'number') {
+      size = 16;
+    }
+    if (typeof font !== 'string') {
+      font = 'Arial';
+    }
+    this.fontSize = size;
+    ctx.font = '' + +' ' + size + 'px ' + font;
+  }
+
+  clear() {
+    const ctx = this._ctx();
+    this._pos.x = 0;
+    this._pos.y = 0;
+    if (ctx) {
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(0, 0, this.width, this.height);
+      ctx.fillStyle = '#000';
+      ctx.strokeStyle = '#000';
+      this.draw(ctx);
+    } else {
+      this.sendClear();
+    }
+  }
+
+  pos(x, y) {
+    this._ctx(); //crete first
+    if (typeof x == 'number') {
+      this._pos.x = x;
+    }
+    if (typeof y == 'number') {
+      this._pos.y = y;
+    }
+    return this._pos;
+  }
+
+  print(text) {
+    const ctx = this._ctx();
+    if (ctx) {
+      ctx.fillText(text, this._pos.x, this._pos.y + this.fontSize);
+      this.draw(ctx);
+      this._pos.y += this.fontSize;
+    } else {
+      /*
+      let obj = {};
+      obj['display'] = {
+        text: '' + text,
+      };
+      this.obniz.send(obj);
+      */
+    }
+  }
+
+  line(x_0, y_0, x_1, y_1) {
+    const ctx = this._ctx();
+    if (ctx) {
+      ctx.beginPath();
+      ctx.moveTo(x_0, y_0);
+      ctx.lineTo(x_1, y_1);
+      ctx.stroke();
+      this.draw(ctx);
+    } else {
+      this.warnCanvasAvailability();
+    }
+  }
+
+  rect(x, y, width, height, mustFill) {
+    const ctx = this._ctx();
+    if (ctx) {
+      if (mustFill) {
+        ctx.fillRect(x, y, width, height);
+      } else {
+        ctx.strokeRect(x, y, width, height);
+      }
+      this.draw(ctx);
+    } else {
+      this.warnCanvasAvailability();
+    }
+  }
+
+  circle(x, y, r, mustFill) {
+    const ctx = this._ctx();
+    if (ctx) {
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, Math.PI * 2);
+      if (mustFill) {
+        ctx.fill();
+      } else {
+        ctx.stroke();
+      }
+      this.draw(ctx);
+    } else {
+      this.warnCanvasAvailability();
+    }
+  }
+
+  // edited bicolor
+  _draw(ctx) {
+    const stride = this.width / 8;
+    let vramBW = new Array(stride * 64);
+    let vramY = new Array(stride * 64);
+    const imageData = ctx.getImageData(0, 0, this.width, this.height);
+    const data = imageData.data;
+
+    for (let i = 0; i < data.length; i += 4) {
+      let brightness = 0.34 * data[i] + 0.5 * data[i + 1] + 0.16 * data[i + 2];
+      let index = parseInt(i / 4);
+      let line = parseInt(index / this.width);
+      let col = parseInt((index - line * this.width) / 8);
+      let bits = parseInt(index - line * this.width) % 8;
+      if (bits == 0) {
+        vramBW[line * stride + col] = 0x00;
+        vramY[line * stride + col] = 0x00;
+      }
+      if (brightness >= 0xDC) {
+        // White
+        vramBW[line * stride + col] |= 0x80 >> bits;
+        vramY[line * stride + col] |= 0x80 >> bits;
+      } else if (brightness > 0x50 && brightness < 0xDC) {
+        // Yellow
+        vramBW[line * stride + col] |= 0x80 >> bits;
+        vramY[line * stride + col] |= 0x00 >> bits;
+      } else if (brightness <= 0x50) {
+        // Black
+        vramBW[line * stride + col] |= 0x00 >> bits;
+        vramY[line * stride + col] |= 0x80 >> bits;
+      }
+    }
+    this.raw(vramBW, vramY);
+  }
+
+  draw(ctx) {
+    if (this.autoFlush) {
+      this._draw(ctx);
+    }
+  }
+
+  drawing(autoFlush) {
+    this.autoFlush = autoFlush == true;
+    const ctx = this._ctx();
+    if (ctx) {
+      this.draw(ctx);
+    }
+  }
+}
+
+if (true) {
+  module.exports = WaveshareEInk_Tricolor;
 }
 
 /***/ }),

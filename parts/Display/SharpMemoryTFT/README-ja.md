@@ -17,8 +17,8 @@ Sharp製の液晶で、ハイコントラスト・省電力が特徴です。
 
 ## wired(obniz,  {[vcc, gnd, vcc_a, gnd_a, sclk, mosi, cs, disp, extcomin, extmode, width, height]} )
 obnizに液晶モジュールをつなぎます。
-液晶ユニットは3.3V駆動です。このライブラリでは、レギュレーターを使う前提でvinに対して5V出力になります。Adafruit社製のようにレギューレーターを内蔵していないモジュールを使用する場合は注意してください。
-液晶との通信にSPIを使用しています。使用していないSPIが1つ以上必要です。
+液晶ユニットは3.3V駆動です。このライブラリでは、レギュレーターを使う前提でvinに対して5V出力になります。Adafruit社製のようにレギューレーターを内蔵していないモジュールを使用する場合は注意してください。
+液晶との通信にSPIを使用しています。未使用のSPIが1つ以上必要です。
 widthに液晶の横ドット数、heightに縦ドット数を指定します。
 
 Adafruit製のモジュールはvcc_a, gnd_a, disp, extcomin, extmodeは指定する必要はありません。(基板内で配線されています。)
@@ -27,13 +27,13 @@ Adafruit製のモジュールはvcc_a, gnd_a, disp, extcomin, extmodeは指定�
 ```javascript
 // Javascript Example
 mdisp = obniz.wired("SharpMemoryTFT", {vcc:0 , gnd:2 , sclk:3 , mosi:4, cs:5, width:144, height:168});
-display.clear();
+mdisp.clear();
 
 for (var i=0;i<10; i++) {
   var x = Math.random() * 144;
   var y = Math.random() * 168;
   var r = Math.random() * 168;
-  display.circle(x, y, r, false);
+  mdisp.circle(x, y, r, false);
   await obniz.wait(1);
 }
 ```
@@ -54,6 +54,7 @@ mdisp = obniz.wired("MemoryDisplay", {vcc:6 , gnd:8, vcc_a:5, gnd_a:9, sclk:0 , 
 
 ## Canvas contextを使って画像を表示するサンプル
 "Image address here"の部分を画像のアドレスに変えると、二値化された画像がディスプレイに表示されます。
+
 ```javascript
 mdisp = obniz.wired("SharpMemoryTFT", {vcc:0 , gnd:2 , sclk:3 , mosi:4, cs:5, width:144, height:168});
 mdisp.clear();
@@ -67,4 +68,9 @@ img.onload = function() {
   ctx.drawImage(img, 0, 0);
   mdisp.draw(ctx);
 }
+```
+HTML部分に以下の一行を加えると、実行画面にcanvasの内容が表示されます。
+```HTML
+<!-- HTML Example -->
+<canvas id="canvas" width="152" height="152"></canvas>
 ```
