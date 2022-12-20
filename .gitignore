@@ -23,5 +23,3 @@ log
 /.run/
 /.env.realtest
 /.env.realtest
-
-dist
