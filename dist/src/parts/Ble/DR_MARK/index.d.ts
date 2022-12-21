@@ -82,7 +82,7 @@ export default class DR_MARK implements ObnizPartsBleInterface {
     private _uuids;
     private _deviceInfoSystem;
     private _requestChar;
-    private static callbackArray;
+    private callbackArray;
     private static pulseDataArray;
     constructor(peripheral: BleRemotePeripheral | null);
     /**
@@ -242,5 +242,5 @@ export default class DR_MARK implements ObnizPartsBleInterface {
     private getCommandResultWait;
     private setCommandCallback;
     private removeCommandCallback;
-    private notifyCallback;
+    notifyCallback: (data: number[]) => void;
 }
